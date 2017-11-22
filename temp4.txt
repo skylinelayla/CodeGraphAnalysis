@@ -1,0 +1,2 @@
+com.crazy.controller.UserController:addUser CALL com.crazy.controller.AccountController:checkAccount
+com.crazy.controller.AccountController:addAccount CALL com.crazy.controller.UserController:addUser

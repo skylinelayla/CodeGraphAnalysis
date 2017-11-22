@@ -13,13 +13,7 @@ import java.util.Enumeration;
  */
 public class MainEntry {
     public static void main(String[] args) throws FileNotFoundException {
-
-
-
         ClassParser cp;
-
-
-
         try {
 //            System.out.println(new File(".").getAbsoluteFile());
             File f = new File("C://crowdsourcing-mart-0.0.1.jar");
@@ -43,8 +37,7 @@ public class MainEntry {
                 cp = new ClassParser("C://crowdsourcing-mart-0.0.1.jar", entry.getName());
                 ClassVisitor visitor = new ClassVisitor(cp.parse());
                 visitor.start();
-//                    System.out.println(visitor.getDegreeInfo());
-//                    System.out.println(visitor.getNodeInfo());
+
             }
 
 
